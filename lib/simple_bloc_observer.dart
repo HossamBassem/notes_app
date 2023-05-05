@@ -16,6 +16,7 @@ class SimpleBlocObserver implements BlocObserver {
   @override
   void onCreate(BlocBase bloc) {
     // TODO: implement onCreate
+    debugPrint('create =$bloc');
   }
 
   @override
@@ -31,5 +32,7 @@ class SimpleBlocObserver implements BlocObserver {
   @override
   void onTransition(Bloc bloc, Transition transition) {
     // TODO: implement onTransition
+    print(bloc);
+    print(transition);
   }
 }
